@@ -16,6 +16,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  const [stacks, setStacks] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -23,6 +24,7 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
+    setStacks({ ...stacks });
   }, []);
 
   return (

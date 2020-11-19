@@ -37,6 +37,7 @@ export const projectsData = [
       "It's a project initiated in a four developer team. We wanted to propose a plateform for developers to gather teams in order to fulfill ambitious projects. It still needs some improvements, we are working on it.",
     url: 'http://95.142.160.243/',
     repo: 'https://github.com/Naddiya/T-SComplete', // if no repo, the button will not show up
+    video: 'https://youtu.be/YZgrCFXXboI?t=5813',
   },
   {
     id: nanoid(),
