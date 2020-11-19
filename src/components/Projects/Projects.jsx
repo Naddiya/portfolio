@@ -43,10 +43,7 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Team-Share'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            "It's a project initiated in a four developper team. We wanted to propose a plateform abling to gather a team to make ambitious projects possible. It still needs some improvements, we are working on it."}
-                        </p>
+                        <p>{info || ''}</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
                       <a

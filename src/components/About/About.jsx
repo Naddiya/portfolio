@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -37,17 +37,11 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    "I'm a passionnate and enthusiastic developper. My goals are to improve my frontend skills by joining a tight developper team."}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    "I'm also interested in UX Design and I want to create fine and confortable user experience."}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Feel free to take a look at my resume'}
-                </p>
+                <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphTwo || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphThree || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphFour || ''}</p>
+
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

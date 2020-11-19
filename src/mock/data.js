@@ -18,9 +18,10 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne: "I'm a passionnate and enthusiastic developper.",
+  paragraphTwo: "I'm also interested in UX Design and I want to create fine and confortable user experience.",
+  paragraphThree: "I'm looking forward to joining a dynamic and supportive team to which I could bring my joyful and warm team spirit.",
+  paragraphFour: "Feel free to take a look at my resume",
   resume: 'https://drive.google.com/file/d/1iTECIU9nlvYvyKdOMMfl0SaRM2YPxYhG/view?usp=sharing', // if no resume, the button will not show up
 };
 
@@ -31,8 +32,9 @@ export const projectsData = [
     img: 'project.jpg',
     title: 'Team-Share',
     info: 'ReactJS - Symfony - React-Router -  ',
-    info2: '',
-    url: '',
+    info2:
+      "It's a project initiated in a four developper team. We wanted to propose a plateform abling to gather a team to make ambitious projects possible. It still needs some improvements, we are working on it.",
+    url: 'http://95.142.160.243/',
     repo: 'https://github.com/Naddiya/T-SComplete', // if no repo, the button will not show up
   },
   {
