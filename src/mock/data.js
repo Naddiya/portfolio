@@ -19,9 +19,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: "I'm a passionnate and enthusiastic developper.",
-  paragraphTwo: "I'm also interested in UX Design and I want to create fine and confortable user experience.",
-  paragraphThree: "I'm looking forward to joining a dynamic and supportive team to which I could bring my joyful and warm team spirit.",
-  paragraphFour: "Feel free to take a look at my resume",
+  paragraphTwo:
+    "I'm interested in UX Design and I want to create fine and confortable user experience.",
+  paragraphThree:
+    "I'm looking forward to joining a dynamic and supportive team to which I could bring my joyful and warm team spirit.",
+  paragraphFour: 'Feel free to take a look at my resume',
   resume: 'https://drive.google.com/file/d/1iTECIU9nlvYvyKdOMMfl0SaRM2YPxYhG/view?usp=sharing', // if no resume, the button will not show up
 };
 
@@ -59,9 +61,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: "I'll be happy to here from you. Click bellow to contact me",
+  btn: 'Contact Nadia',
+  email: 'nadiareactjs@gmail.com',
 };
 
 // FOOTER DATA

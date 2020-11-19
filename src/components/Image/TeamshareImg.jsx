@@ -33,7 +33,7 @@ const TeamshareImg = ({ filename, alt }) => (
   />
 );
 
-ProjectImg.propTypes = {
+TeamshareImg.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
 };
