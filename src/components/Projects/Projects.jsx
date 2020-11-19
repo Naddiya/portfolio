@@ -50,7 +50,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={url || 'http://95.142.160.243/'}
+                        href={url || ''}
                       >
                         See Live
                       </a>
@@ -78,7 +78,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || 'https://github.com/Naddiya/T-SComplete'}
+                        href={url || ''}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"

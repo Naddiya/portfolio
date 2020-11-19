@@ -2,28 +2,27 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Nadia Medkouri Zidi', // e.g: 'Name | Developer'
+  lang: 'fr', // e.g: en, es, fr, jp
+  description: 'basement development', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
+  title: 'Nadia Medkouri -',
+  name: ' Frontend Developer',
   subtitle: '',
-  cta: '',
+  cta: 'See more ?',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: "I'm a passionnate and enthusiastic developper.",
-  paragraphTwo:
-    "I'm interested in UX Design and I want to create fine and confortable user experience.",
+  paragraphOne: "I'm a passionnate and enthusiastic developer.",
+  paragraphTwo: "I'm interested in UX Design and I want to create fine and cosy user experience.",
   paragraphThree:
     "I'm looking forward to joining a dynamic and supportive team to which I could bring my joyful and warm team spirit.",
-  paragraphFour: 'Feel free to take a look at my resume',
+  paragraphFour: '',
   resume: 'https://drive.google.com/file/d/1iTECIU9nlvYvyKdOMMfl0SaRM2YPxYhG/view?usp=sharing', // if no resume, the button will not show up
 };
 
@@ -33,36 +32,36 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'Team-Share',
-    info: 'ReactJS - Symfony - React-Router -  ',
+    info: 'ReactJS -Redux, Symfony, React-Router, Semantic-UI & more ...',
     info2:
-      "It's a project initiated in a four developper team. We wanted to propose a plateform abling to gather a team to make ambitious projects possible. It still needs some improvements, we are working on it.",
+      "It's a project initiated in a four developer team. We wanted to propose a plateform abling bringing together teams to make ambitious projects to hard to handle alone. It still needs some improvements, we are working on it.",
     url: 'http://95.142.160.243/',
     repo: 'https://github.com/Naddiya/T-SComplete', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project2.jpg',
+    title: 'Github Dashboard',
+    info: 'React, React-Router , Redux , axios and slugify',
     info2: '',
     url: '',
-    repo: '', // if no repo, the button will not show up
+    repo: 'https://github.com/Naddiya/githubDashboard', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'project3.jpg',
+    title: 'Recipe Manager',
+    info: 'React, Redux, React-Router',
+    info2: 'Browse throw your recipes',
     url: '',
-    repo: '', // if no repo, the button will not show up
+    repo: 'https://github.com/Naddiya/recipe_manager', // if no repo, the button will not show up
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: "I'll be happy to here from you. Click bellow to contact me",
-  btn: 'Contact Nadia',
+  cta: 'Click bellow to contact me',
+  btn: 'Contact',
   email: 'nadiareactjs@gmail.com',
 };
 
