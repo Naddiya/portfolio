@@ -30,17 +30,17 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'project1.jpg',
     title: 'Team-Share',
     info: 'ReactJS -Redux, Symfony, React-Router, Semantic-UI & more ...',
     info2:
-      "It's a project initiated in a four developer team. We wanted to propose a plateform abling bringing together teams to make ambitious projects to hard to handle alone. It still needs some improvements, we are working on it.",
+      "It's a project initiated in a four developer team. We wanted to propose a plateform for developers to gather teams in order to fulfill ambitious projects. It still needs some improvements, we are working on it.",
     url: 'http://95.142.160.243/',
     repo: 'https://github.com/Naddiya/T-SComplete', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project2.jpg',
+    img: 'project2',
     title: 'Github Dashboard',
     info: 'React, React-Router , Redux , axios and slugify',
     info2: '',
@@ -49,7 +49,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project3.jpg',
+    img: 'project3',
     title: 'Recipe Manager',
     info: 'React, Redux, React-Router',
     info2: 'Browse throw your recipes',
@@ -60,8 +60,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Click bellow to contact me',
-  btn: 'Contact',
+  cta: '',
+  btn: '',
   email: 'nadiareactjs@gmail.com',
 };
 
