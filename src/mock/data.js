@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: 'Nadia Medkouri -',
   name: ' Frontend Developer',
-  subtitle: '',
+  subtitle: 'Javascript enthusiast',
   cta: 'See more ?',
 };
 
@@ -30,14 +30,14 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project1.jpg',
+    img: 'project1',
     title: 'Team-Share',
     info: 'ReactJS -Redux, Symfony, React-Router, Semantic-UI & more ...',
     info2:
       "It's a project initiated in a four developer team. We wanted to propose a plateform for developers to gather teams in order to fulfill ambitious projects. It still needs some improvements, we are working on it.",
     url: 'http://95.142.160.243/',
     repo: 'https://github.com/Naddiya/T-SComplete', // if no repo, the button will not show up
-    video: 'https://youtu.be/YZgrCFXXboI?t=5813',
+    video: 'https://youtu.be/YZgrCFXXboI?t=5819',
   },
   {
     id: nanoid(),
