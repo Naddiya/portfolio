@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 // NPM
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
-import emailjs from 'emailjs-com';
+import emailjs, { sendForm } from 'emailjs-com';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 // LOCAL
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -15,7 +18,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('gmail', 'template_9cxbqfx', e.target, 'user_M7aONUJz5GnxUEJnFnpmY').then(
       (result) => {
         console.log(result.text);
@@ -56,9 +58,20 @@ const Contact = () => {
             </label>
             <label htmlFor="user_message">
               Message
-              <textarea name="user_message" />
+              <textarea name="user_message" type="text" />
             </label>
-            <input type="submit" value="Send" />
+            <TextField
+              id=""
+              label="Multiline"
+              multiline
+              rows={4}
+              defaultValue="votre message"
+              variant="outlined"
+            />
+            {/* <input type="submit" value="Send" /> */}
+            <Button type="submit" label="submit" value="Send">
+              Send
+            </Button>
           </form>
         </Fade>
       </Container>
