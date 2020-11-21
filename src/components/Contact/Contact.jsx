@@ -16,7 +16,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID').then(
+    emailjs.sendForm('gmail', 'template_9cxbqfx', e.target, 'user_M7aONUJz5GnxUEJnFnpmY').then(
       (result) => {
         console.log(result.text);
       },
@@ -24,6 +24,7 @@ const Contact = () => {
         console.log(error.text);
       }
     );
+    e.target.reset();
   };
 
   return (
@@ -37,24 +38,27 @@ const Contact = () => {
             </p>
           </div>
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <label htmlFor="Name">
+            <label htmlFor="user_firstname">
+              Firstname
+              <input id="user_firstname" type="text" name="user_firstname" />
+            </label>
+            <label htmlFor="user_name">
               Name
-              <input id="Name" type="text" name="user_name" />
+              <input id="user_name" type="text" name="user_name" />
             </label>
-            <label htmlFor="first-name">
-              First Name
-              <input type="text" id="first-name" />
-            </label>
-            <label>
+            <label htmlFor="user_email">
               Email
               <input type="email" name="user_email" />
             </label>
-            <label>
-              Message
-              <textarea name="message" />
-              <input type="submit" value="Send" />
+            <label htmlFor="user_phone">
+              Phone
+              <input type="tel" name="user_phone" pattern="[0-9]{10}" required />
             </label>
+            <label htmlFor="user_message">
+              Message
+              <textarea name="user_message" />
+            </label>
+            <input type="submit" value="Send" />
           </form>
         </Fade>
       </Container>
