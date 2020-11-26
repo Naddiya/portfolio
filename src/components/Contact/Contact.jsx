@@ -39,40 +39,47 @@ const Contact = () => {
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
           </div>
-          <form className="contact-form" onSubmit={sendEmail}>
-            <label htmlFor="user_firstname">
-              Firstname
-              <input id="user_firstname" type="text" name="user_firstname" />
-            </label>
-            <label htmlFor="user_name">
-              Name
-              <input id="user_name" type="text" name="user_name" />
-            </label>
-            <label htmlFor="user_email">
-              Email
-              <input type="email" name="user_email" />
-            </label>
-            <label htmlFor="user_phone">
-              Phone
-              <input type="tel" name="user_phone" pattern="[0-9]{10}" required />
-            </label>
-            <label htmlFor="user_message">
-              Message
-              <textarea name="user_message" type="text" />
-            </label>
-            <TextField
-              id=""
-              label="Multiline"
-              multiline
-              rows={4}
-              defaultValue="votre message"
-              variant="outlined"
-            />
-            {/* <input type="submit" value="Send" /> */}
-            <Button type="submit" label="submit" value="Send">
-              Send
-            </Button>
-          </form>
+          <Container className="from-container">
+            <form className="contact-form" onSubmit={sendEmail}>
+              <TextField
+                id="user_firstname"
+                type="text"
+                name="user_firstname"
+                variant="outlined"
+                label="prenom"
+              />
+              <TextField
+                id="user_name"
+                type="text"
+                name="user_name"
+                label="nom"
+                variant="outlined"
+              />
+              <TextField type="email" name="user_email" variant="outlined" label="email" />
+              <TextField
+                type="tel"
+                name="user_phone"
+                pattern="[0-9]{10}"
+                required
+                label="phone"
+                variant="outlined"
+              />
+              <TextField
+                name="user_message"
+                id="user_message"
+                type="text"
+                label="Multiline"
+                multiline
+                rows={4}
+                defaultValue="votre message"
+                variant="outlined"
+              />
+              {/* <input type="submit" value="Send" /> */}
+              <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
+                Send
+              </Button>
+            </form>
+          </Container>
         </Fade>
       </Container>
     </section>
