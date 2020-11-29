@@ -34,12 +34,12 @@ const Contact = () => {
       <Container>
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
+          <div className="contact-wrapper__text">
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
           </div>
-          <Container className="from-container">
+          <Container className="form-container">
             <form className="contact-form" onSubmit={sendEmail}>
               <TextField
                 id="user_firstname"
@@ -65,6 +65,7 @@ const Contact = () => {
                 variant="outlined"
               />
               <TextField
+                className="contact-form-button"
                 name="user_message"
                 id="user_message"
                 type="text"
@@ -75,7 +76,7 @@ const Contact = () => {
                 variant="outlined"
               />
               {/* <input type="submit" value="Send" /> */}
-              <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
+              <Button className="contact-form-button" type="submit" value="Send">
                 Send
               </Button>
             </form>
