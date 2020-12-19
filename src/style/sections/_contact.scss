@@ -33,4 +33,9 @@
     }
   }
 
+  .contact-message {
+    display:grid;
+    grid-auto-rows : minmax(60px, auto);
+  }
+
 }

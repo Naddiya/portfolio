@@ -39,48 +39,39 @@ const Contact = () => {
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
           </div>
-          <Container className="contact-wrapper__message">
-            <form className="contact-wrapper__message__form" onSubmit={sendEmail}>
-              <TextField
-                id="user_firstname"
-                type="text"
-                name="user_firstname"
-                variant="outlined"
-                label="prenom"
-              />
-              <TextField
-                id="user_name"
-                type="text"
-                name="user_name"
-                label="nom"
-                variant="outlined"
-              />
-              <TextField type="email" name="user_email" variant="outlined" label="email" />
-              <TextField
-                type="tel"
-                name="user_phone"
-                pattern="[0-9]{10}"
-                required
-                label="phone"
-                variant="outlined"
-              />
-              <TextField
-                className="contact-form-button"
-                name="user_message"
-                id="user_message"
-                type="text"
-                label="Multiline"
-                multiline
-                rows={4}
-                defaultValue="votre message"
-                variant="outlined"
-              />
-              {/* <input type="submit" value="Send" /> */}
-              <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
-                Send
-              </Button>
-            </form>
-          </Container>
+          <form className="contact-message" onSubmit={sendEmail}>
+            <TextField
+              id="user_firstname"
+              type="text"
+              name="user_firstname"
+              variant="outlined"
+              label="prenom"
+            />
+            <TextField id="user_name" type="text" name="user_name" label="nom" variant="outlined" />
+            <TextField type="email" name="user_email" variant="outlined" label="email" />
+            <TextField
+              type="tel"
+              name="user_phone"
+              pattern="[0-9]{10}"
+              required
+              label="phone"
+              variant="outlined"
+            />
+            <TextField
+              className="contact-form-button"
+              name="user_message"
+              id="user_message"
+              type="text"
+              label="Message"
+              multiline
+              rows={4}
+              variant="outlined"
+            />
+            {/* <input type="submit" value="Send" /> */}
+            <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
+              Send
+            </Button>
+          </form>
         </Fade>
       </Container>
     </section>
