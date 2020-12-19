@@ -68,7 +68,7 @@ const Contact = () => {
               variant="outlined"
             />
             {/* <input type="submit" value="Send" /> */}
-            <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
+            <Button className="cta-btn cta-btn--contact" type="submit" value="Send">
               Send
             </Button>
           </form>
