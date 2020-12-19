@@ -39,8 +39,8 @@ const Contact = () => {
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
           </div>
-          <Container className="form-container">
-            <form className="contact-form" onSubmit={sendEmail}>
+          <Container className="contact-wrapper__message">
+            <form className="contact-wrapper__message__form" onSubmit={sendEmail}>
               <TextField
                 id="user_firstname"
                 type="text"
@@ -76,7 +76,7 @@ const Contact = () => {
                 variant="outlined"
               />
               {/* <input type="submit" value="Send" /> */}
-              <Button className="contact-form-button" type="submit" value="Send">
+              <Button className="cta-btn cta-btn--resume" type="submit" value="Send">
                 Send
               </Button>
             </form>
