@@ -9,17 +9,17 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'Nadia Medkouri -',
-  name: ' Frontend Developer',
-  subtitle: 'Javascript enthusiast',
-  cta: 'See more ?',
+  title: 'Nadia Medkouri',
+  name: '- Web Developer',
+  subtitle: 'FullStack JavaScript',
+  cta: 'What else ?',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: "I'm a passionnate and enthusiastic developer.",
-  paragraphTwo: "I'm interested in UX Design and I want to create fine and cosy user experience.",
+  paragraphTwo: 'I love audacious designs and I care about user experience.',
   paragraphThree:
     "I'm looking forward to joining a dynamic and supportive team to which I could bring my joyful and warm team spirit.",
   paragraphFour: '',
@@ -44,7 +44,8 @@ export const projectsData = [
     img: 'project2',
     title: 'Github Dashboard',
     info: 'React, React-Router , Redux , axios and slugify',
-    info2: '',
+    info2:
+      ' This dashboard ables you to search for repositories using github api in you own personnal interface. ',
     url: '',
     repo: 'https://github.com/Naddiya/githubDashboard', // if no repo, the button will not show up
   },
@@ -53,7 +54,7 @@ export const projectsData = [
     img: 'project3',
     title: 'Recipe Manager',
     info: 'React, Redux, React-Router',
-    info2: 'Browse throw your recipes',
+    info2: 'Browse throw your recipes in a pleasant environment ',
     url: '',
     repo: 'https://github.com/Naddiya/recipe_manager', // if no repo, the button will not show up
   },
