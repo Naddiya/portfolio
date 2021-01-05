@@ -34,8 +34,14 @@
   }
 
   .contact-message {
+    padding: 2rem;
+    border-radius:15px;
+    background-color: white;
     display:grid;
     grid-auto-rows : minmax(60px, auto);
+    & button{
+      background-color: black;
+    }
   }
 
 }

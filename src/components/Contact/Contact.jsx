@@ -8,6 +8,7 @@ import { Container } from 'react-bootstrap';
 import emailjs, { sendForm } from 'emailjs-com';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import { FormControlLabel } from '@material-ui/core';
 // LOCAL
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -46,14 +47,20 @@ const Contact = () => {
               name="user_firstname"
               variant="outlined"
               label="prenom"
+              pattern="[a-z][A-Z]"
             />
             <TextField id="user_name" type="text" name="user_name" label="nom" variant="outlined" />
-            <TextField type="email" name="user_email" variant="outlined" label="email" />
+            <TextField
+              type="email"
+              pattern="[a-z][A-Z]"
+              name="user_email"
+              variant="outlined"
+              label="email"
+            />
             <TextField
               type="tel"
               name="user_phone"
               pattern="[0-9]{10}"
-              required
               label="phone"
               variant="outlined"
             />
